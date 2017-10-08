@@ -23,6 +23,7 @@ if test ! $(which node); then
   nodenv global 8.5.0
   nodenv init
   echo 'eval "$(nodenv init -)"'>>~/.zshrc
+  source ~/.zshrc
 fi
 # Install global NPM packages
 npm install --global yarn
