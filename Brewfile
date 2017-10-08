@@ -12,6 +12,7 @@ brew 'maven'
 brew 'gradle'
 cask 'caffeine'
 cask 'docker'
+cask 'mackup'
 
 # Shells
 brew 'bash-completion'
