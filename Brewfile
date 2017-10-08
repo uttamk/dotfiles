@@ -1,88 +1,52 @@
-# Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
-tap 'homebrew/bundle'
-tap 'homebrew/dupes'
-tap 'homebrew/php'
+cask_args appdir: '/Applications'
 
-# Install ZSH
+tap 'caskroom/cask'
+
+# System
+brew 'nodenv'
+brew 'pyenv'
+brew 'rbenv'
+
+cask 'java' unless system '/usr/libexec/java_home --failfast'
+brew 'maven'
+brew 'gradle'
+cask 'caffeine'
+cask 'docker'
+
+# Shells
+brew 'bash-completion'
 brew 'zsh'
 brew 'zsh-completions'
 
-# Install GNU core utilities (those that come with macOS are outdated)
-brew 'coreutils'
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew 'findutils'
-
-# Install Bash 4
-brew 'bash'
-
-# Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
-
-# Install Binaries
-brew 'awscli'
-brew 'git'
-brew 'hub'
+# Terminal & CLI
+brew 'htop'
+brew 'jq'
+brew 'mtr'
+brew 'nmap'
+brew 'pwgen'
+brew 'tmux'
 brew 'tree'
-brew 'mackup'
-brew 'mas'
-brew 'node'
-brew 'trash'
+brew 'watch'
 brew 'wget'
 
-# Development
-brew 'php71'
-brew 'php71-intl'
-brew 'mariadb'
-
-# Apps
-cask 'aerial'
-cask 'alfred'
-cask 'caffeine'
-cask 'docker'
-cask 'firefox'
-cask 'google-backup-and-sync'
-cask 'google-chrome'
-cask 'gpgtools'
 cask 'iterm2'
-cask 'mysqlworkbench'
-cask 'phpstorm'
-cask 'quip'
-cask 'sequel-pro'
-cask 'shuttle'
+
+# Cloud Services
+cask '1password'
+cask 'dropbox'
+cask 'evernote'
+cask 'google-drive-file-stream'
+
+# Communication
 cask 'slack'
-cask 'sublime-text'
-cask 'torbrowser'
-cask 'tower'
-cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
-cask 'vlc'
+cask 'skype'
 
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
+# Editors & IDEs & Tools
+cask 'intellij-idea'
+cask 'pycharm'
+cask 'visual-studio-code'
+brew 'vim'
 
-# Fonts
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-
-# Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
-mas 'Gapplin', id: 768053424
-mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+# Web
+cask 'google-chrome'
+cask 'kindle'
