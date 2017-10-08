@@ -21,6 +21,7 @@ chsh -s $(which zsh)
 if test ! $(which node); then
   nodenv install 8.5.0
   nodenv global 8.5.0
+  nodenv init >>~/.zshrc
 fi
 # Install global NPM packages
 npm install --global yarn
