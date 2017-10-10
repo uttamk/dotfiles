@@ -36,7 +36,6 @@ cask 'iterm2'
 cask '1password'
 cask 'dropbox'
 cask 'evernote'
-cask 'google-drive-file-stream'
 
 # Communication
 cask 'slack'
