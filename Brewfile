@@ -1,15 +1,11 @@
 cask_args appdir: '/Applications'
 
-tap 'caskroom/cask'
-
 # System
 brew 'nodenv'
 brew 'pyenv'
 brew 'rbenv'
+brew 'jenv'
 
-cask 'java' unless system '/usr/libexec/java_home --failfast'
-brew 'maven'
-brew 'gradle'
 cask 'caffeine'
 cask 'docker'
 
@@ -43,3 +39,6 @@ brew 'vim'
 # Web
 cask 'google-chrome'
 cask 'kindle'
+
+# Utils
+cask 'scroll-reverser'
