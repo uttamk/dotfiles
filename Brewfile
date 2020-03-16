@@ -12,7 +12,6 @@ brew 'maven'
 brew 'gradle'
 cask 'caffeine'
 cask 'docker'
-cask 'mackup'
 
 # Shells
 brew 'bash-completion'
@@ -32,14 +31,8 @@ brew 'wget'
 
 cask 'iterm2'
 
-# Cloud Services
-cask '1password'
-cask 'dropbox'
-cask 'evernote'
-
 # Communication
 cask 'slack'
-cask 'skype'
 
 # Editors & IDEs & Tools
 cask 'intellij-idea'
