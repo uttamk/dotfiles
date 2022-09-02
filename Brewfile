@@ -7,7 +7,6 @@ brew 'rbenv'
 brew 'jenv'
 
 cask 'caffeine'
-cask 'docker'
 
 # Shells
 brew 'bash-completion'
@@ -16,11 +15,6 @@ brew 'zsh-completions'
 
 # Terminal & CLI
 brew 'htop'
-brew 'jq'
-brew 'mtr'
-brew 'nmap'
-brew 'pwgen'
-brew 'tmux'
 brew 'tree'
 brew 'watch'
 brew 'wget'
@@ -29,16 +23,16 @@ cask 'iterm2'
 
 # Communication
 cask 'slack'
+cask 'whatsapp'
+cask 'telegram'
 
 # Editors & IDEs & Tools
 cask 'intellij-idea'
 cask 'pycharm'
+cask 'rubymine'
 cask 'visual-studio-code'
 brew 'vim'
-
-# Web
-cask 'google-chrome'
-cask 'kindle'
+cask 'rancher'
 
 # Utils
 cask 'scroll-reverser'
