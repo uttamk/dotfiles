@@ -36,3 +36,6 @@ cask 'rancher'
 
 # Utils
 cask 'scroll-reverser'
+
+# Streaming
+cask 'spotify'
