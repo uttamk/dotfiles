@@ -39,3 +39,7 @@ cask 'scroll-reverser'
 
 # Streaming
 cask 'spotify'
+
+# PaaS
+tap 'heroku/brew'
+brew 'heroku'
